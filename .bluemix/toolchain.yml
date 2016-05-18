@@ -1,0 +1,28 @@
+---
+name: "Simple Toolchain"
+description: "With this toolchain, you can develop and deploy a Cloud Foundry application. By default, the toolchain uses a sample Node.js Hello World app, but you can link to your own GitHub repository instead. This toolchain is preconfigured for continuous delivery, source control, issue tracking, and online editing.\n\nTo get started, click **Create**."
+version: 0.1
+image: data:image/png;base64,$file(toolchain.png,base64)
+required: 
+ - deploy
+ - sample-repo
+
+# Github repos
+sample-repo:
+  service_id: githubpublic
+  parameters:
+    repo_name: "sample-{{name}}"
+    repo_url: https://github.com/open-toolchain/node-hello-world
+    type: clone
+    has_issues: true
+
+# Jenkins
+sample-build:
+  service_id: userprovided
+  parameters:
+    name: jenkins_sample_app
+    type: jenkins
+
+#Web IDE
+webide:
+  service_id: orion
