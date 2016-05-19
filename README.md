@@ -1,4 +1,4 @@
-#Simple toolchain
+#Simple toolchain with Jenkins linked via User Provided Service
 
 This Hello World application uses Node.js and includes a DevOps toolchain that is preconfigured for continuous delivery using Jenkins, source control, issue tracking, and online editing.
 
