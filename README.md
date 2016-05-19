@@ -7,7 +7,7 @@ This Hello World application uses Node.js and includes a DevOps toolchain that i
 
 [![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://daily-console.stage1.ng.bluemix.net/devops/setup/deploy/?repository=https%3A//github.com/szbra/toolchain-jenkins-otc)
 
-* Navigate to Jenkins, and update variable in the Build Job
+* Navigate to Jenkins, and update variables listed below in the Build Job
 <pre>
 	CF_ACCESS_TOKEN="bearer ..."
 	CF_REFRESH_TOKEN="..."
@@ -17,7 +17,7 @@ This Hello World application uses Node.js and includes a DevOps toolchain that i
 to use the right cf tokens, and org and space where your app should be deployed.
 
 
-* Create the app toolchain
+* Create the app toolchain that will deploy this Hello World app
 
 [![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://daily-console.stage1.ng.bluemix.net/devops/setup/deploy/?repository=https%3A//github.com/szbra/simple-toolchain-with-jenkins)
 
