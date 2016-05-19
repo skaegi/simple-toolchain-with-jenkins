@@ -14,8 +14,7 @@ This Hello World application uses Node.js and includes a DevOps toolchain that i
 	CF_ORG_NAME="..."
 	CF_SPACE_NAME="..."
 </pre>
-to use the right cf tokens, and org and space where your app should be deployed.
-
+to use the right cf tokens, and org and space where this Hello World app should be deployed.
 
 * Create the app toolchain that will deploy this Hello World app
 
