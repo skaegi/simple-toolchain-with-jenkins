@@ -2,20 +2,22 @@
 
 This Hello World application uses Node.js and includes a DevOps toolchain that is preconfigured for continuous delivery using Jenkins, source control, issue tracking, and online editing.
 
-##Prerequisites:
-1. Deploy Jenkins for OTC first
+##Steps:
+* Create Jenkins for OTC toolchain that will deploy customized Jenkins in a Docker container
 
 [![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://daily-console.stage1.ng.bluemix.net/devops/setup/deploy/?repository=https%3A//github.com/szbra/toolchain-jenkins-otc)
 
-2. Navigate to Jenkins, and update variable in the Build Job
-<code>CF_ACCESS_TOKEN="bearer ..."
-CF_REFRESH_TOKEN="..."
-CF_ORG_NAME="..."
-CF_SPACE_NAME="..."</code>
+* Navigate to Jenkins, and update variable in the Build Job
+<pre>
+	CF_ACCESS_TOKEN="bearer ..."
+	CF_REFRESH_TOKEN="..."
+	CF_ORG_NAME="..."
+	CF_SPACE_NAME="..."
+</pre>
 to use the right cf tokens, and org and space where your app should be deployed.
 
 
-To get started, click **Deploy to Bluemix**.
+* Create the app toolchain
 
 [![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://daily-console.stage1.ng.bluemix.net/devops/setup/deploy/?repository=https%3A//github.com/szbra/simple-toolchain-with-jenkins)
 
