@@ -1,6 +1,6 @@
 ---
 stages:
-- name: JENKINS BUILD
+- name: Jenkins Trigger
   inputs:
   - type: git
     branch: master
@@ -8,7 +8,7 @@ stages:
   triggers:
   - type: commit
   jobs:
-  - name: Build
+  - name: Worker
     type: builder
     artifact_dir: ''
     build_type: shell
