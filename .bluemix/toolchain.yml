@@ -21,8 +21,8 @@ webhook:
   parameters:
     name: "sample-{{name}}"
     configuration: 
-     content: $file(webhook.yml)
-     execute: true
+      content: $file(webhook.yml)
+      execute: true
     services: ["sample-repo"]
 
 # Jenkins
