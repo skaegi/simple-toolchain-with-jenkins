@@ -10,3 +10,17 @@ stages:
   jobs:
   - name: Build
     type: builder
+    artifact_dir: ''
+    build_type: shell
+    script: |-
+      #!/bin/bash
+      # curl JENKINS_URL/job/Build&Deploy/build?token=TOKEN_NAME
+- name: Jenkins Finished Hook
+  jobs:
+  - name: Worker
+    type: builder
+    artifact_dir: ''
+    build_type: shell
+    script: |-
+      #!/bin/bash
+      # your script here
