@@ -23,4 +23,4 @@ stages:
     build_type: shell
     script: |-
       #!/bin/bash
-      # your script here
+      echo 'Jenkins build & deploy finished'
