@@ -15,7 +15,6 @@ sample-repo:
     has_issues: true
     
 # Webhooks workaround
-
 webhook:
   service_id: pipeline
   parameters:

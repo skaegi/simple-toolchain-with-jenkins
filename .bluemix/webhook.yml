@@ -14,7 +14,7 @@ stages:
     build_type: shell
     script: |-
       #!/bin/bash
-      # curl JENKINS_URL/job/Build&Deploy/build?token=TOKEN_NAME
+      # curl JENKINS_URL/job/Build&Deploy/build?token=jenkins_sample_app
 - name: Jenkins Finished Hook
   jobs:
   - name: Worker
