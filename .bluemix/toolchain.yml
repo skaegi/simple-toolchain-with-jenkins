@@ -34,7 +34,7 @@ sample-build:
     name: jenkins_sample_app
     type: jenkins
     imageUrl: https://wiki.jenkins-ci.org/download/attachments/2916393/headshot.png
-    additional-properties: "repo_name={{sample-repo.parameters.repo_name}};repo_branch=master;pipeline_name={{webhook.parameters.name}}"
+    additional-properties: "repo_name={{sample-repo.parameters.repo_name}};repo_branch=master;webhook_name={{webhook.parameters.name}}"
 
 #Web IDE
 webide:

@@ -15,7 +15,7 @@ stages:
     script: |-
       #!/bin/bash
       curl JENKINS_URL/job/Build%26Deploy/build?token=jenkins_sample_app
-- name: Jenkins Finished Hook
+- name: Jenkins Success Hook
   jobs:
   - name: Worker
     type: builder
@@ -23,4 +23,13 @@ stages:
     build_type: shell
     script: |-
       #!/bin/bash
-      echo 'Jenkins build & deploy finished'
+      echo 'Jenkins build & deploy finished successfully'
+- name: Jenkins Failure Hook
+  jobs:
+  - name: Worker
+    type: builder
+    artifact_dir: ''
+    build_type: shell
+    script: |-
+      #!/bin/bash
+      echo 'Jenkins build & deploy failed'
