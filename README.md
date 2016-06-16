@@ -7,11 +7,11 @@ This Hello World application uses Node.js and includes a DevOps toolchain that i
 
 [![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://daily-console.stage1.ng.bluemix.net/devops/setup/deploy/?repository=https%3A//github.com/szbra/toolchain-jenkins-otc)
 
-* Install Open Toolchain plugin into Jenkins (TBD)
+* Install Open Toolchain plugin into Jenkins (internal for now)
 
 * Create the app toolchain that will deploy this Hello World app
 
-[![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://daily-console.stage1.ng.bluemix.net/devops/setup/deploy/?repository=https%3A//github.com/szbra/simple-toolchain-with-jenkins)
+[![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://daily-console.stage1.ng.bluemix.net/devops/setup/deploy/?repository=https%3A//github.com/skaegi/simple-toolchain-with-jenkins)
 
 <!--
 For more information about using the sample, including instructions to add tools to the toolchain and make code changes, see <a href="x">Simple toolchain tutorial</a>
