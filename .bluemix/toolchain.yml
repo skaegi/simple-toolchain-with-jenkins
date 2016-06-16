@@ -29,7 +29,7 @@ webhook:
 
 # Jenkins
 sample-build:
-  service_id: userprovided
+  service_id: customtool
   parameters:
     name: jenkins_sample_app
     type: jenkins
